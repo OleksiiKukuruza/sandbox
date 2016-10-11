@@ -13,7 +13,7 @@ const config = {
     },
     module: {
         loaders: [
-            {test: /\.js$/, loader: 'babel'}
+            {test: /\.js$/, loaders: ['babel', 'eslint'], exclude: /node_modules/}
         ]
     },
     plugins: [
